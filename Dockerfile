@@ -8,6 +8,8 @@ RUN npm i
 
 COPY . .
 
-EXPOSE 3000
+ENV PORT 4200
 
-CMD ["npm", "run", "start"]
+EXPOSE $PORT
+
+CMD ["node", "app.js"]
